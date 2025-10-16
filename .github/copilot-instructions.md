@@ -8,6 +8,10 @@ This instruction defines best practices for developing full-stack applications u
 
 This is a showcase application demonstrating a full-stack solution with a .NET Core backend and a React frontend. The backend provides RESTful APIs for managing user data, while the frontend offers a user interface for interacting with these APIs. The application emphasizes best practices in code organization, security, and maintainability.
 
+## Your Workflow
+
+Before implementing any changes create a new branch named `feature/your-feature-name` from the `main` branch. After completing your changes, open a pull request targeting the `main` branch. Ensure that your code adheres to the guidelines outlined in this document, and run all tests to verify functionality before submitting your pull request.
+
 ## Best Practices
 
 ### Architecture & Design Principles
