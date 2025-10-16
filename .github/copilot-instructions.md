@@ -14,6 +14,13 @@ Before implementing any changes create a new branch named `feature/your-feature-
 
 ## Best Practices
 
+ALWAYS Choose a simple solution over a complex one.
+NEVER implement unnecessary features or optimizations.
+NEVER suggest over-engineered solutions.
+NEVER suggest overkill. Focus on real-world wins.
+NEVER recreate existing libraries or frameworks.
+NEVER recreate existing code
+
 ### Architecture & Design Principles
 
 - **Single Responsibility Principle (SRP)**: Each class, method, and component should have one reason to change
