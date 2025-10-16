@@ -12,6 +12,10 @@ This is a showcase application demonstrating a full-stack solution with a .NET C
 
 Before implementing any changes create a new branch named `feature/your-feature-name` from the `main` branch. After completing your changes, open a pull request targeting the `main` branch. Ensure that your code adheres to the guidelines outlined in this document, and run all tests to verify functionality before submitting your pull request.
 
+## Branch Policy
+
+Always creat branches from `main` and name them `feature/your-feature-name` or `bugfix/your-bugfix-name`. Do not commit directly to the `main` branch.
+
 ## Best Practices
 
 ALWAYS Choose a simple solution over a complex one.
