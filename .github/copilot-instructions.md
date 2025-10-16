@@ -8,10 +8,6 @@ This instruction defines best practices for developing full-stack applications u
 
 This is a showcase application demonstrating a full-stack solution with a .NET Core backend and a React frontend. The backend provides RESTful APIs for managing user data, while the frontend offers a user interface for interacting with these APIs. The application emphasizes best practices in code organization, security, and maintainability.
 
-## Your Workflow
-
-Before implementing any changes create a new branch named `feature/your-feature-name` from the `main` branch. After completing your changes, open a pull request targeting the `main` branch. Ensure that your code adheres to the guidelines outlined in this document, and run all tests to verify functionality before submitting your pull request.
-
 ## Branch Policy
 
 Always creat branches from `main` and name them `feature/your-feature-name` or `bugfix/your-bugfix-name`. Do not commit directly to the `main` branch.
@@ -23,7 +19,7 @@ NEVER implement unnecessary features or optimizations.
 NEVER suggest over-engineered solutions.
 NEVER suggest overkill. Focus on real-world wins.
 NEVER recreate existing libraries or frameworks.
-NEVER recreate existing code
+NEVER recreate existing code.
 
 ### Architecture & Design Principles
 
@@ -43,6 +39,7 @@ NEVER recreate existing code
 - **Repository Pattern**: Abstract data access behind repository interfaces
 - **Unit of Work**: Group related database operations for transaction management
 - in the Backend store all data in memory - do not use a real database
+- add a gitignore file to the backend to ignore bin, obj, and other unnecessary files
 
 ### React Frontend
 
@@ -52,6 +49,8 @@ NEVER recreate existing code
 - **Error Boundaries**: Implement error boundaries for graceful error handling
 - **Code Splitting**: Use React.lazy() and Suspense for route-based code splitting
 - **TypeScript**: Use TypeScript for type safety and better developer experience
+- use vite as build tool
+- add a gitignore file to the frontend to ignore node_modules and other unnecessary files
 
 ### Security
 
