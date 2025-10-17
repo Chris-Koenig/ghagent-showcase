@@ -1,7 +1,7 @@
 /* App-specific styles */
 .app {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, #0a1c12 0%, #1a3d25 100%);
   color: #e5e7eb;
   display: flex;
   flex-direction: column;
@@ -46,8 +46,8 @@
 
 /* Health Check Component */
 .health-check {
-  background: rgba(55, 65, 81, 0.7);
-  border: 1px solid #374151;
+  background: rgba(26, 61, 37, 0.7);
+  border: 1px solid #2a5a38;
   border-radius: 16px;
   padding: 2rem;
   width: 100%;
@@ -173,8 +173,8 @@
 }
 
 .health-info {
-  background: rgba(31, 41, 55, 0.5);
-  border: 1px solid #374151;
+  background: rgba(15, 42, 26, 0.5);
+  border: 1px solid #2a5a38;
   border-radius: 8px;
   padding: 1rem;
   font-size: 0.9rem;
