@@ -16,4 +16,4 @@ const HealthPage: React.FC = () => {
   );
 };
 
-export default HealthPage;
+export { HealthPage };

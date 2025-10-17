@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useHealthCheck } from '../hooks';
+import React, { useEffect } from "react";
+import { useHealthCheck } from "../hooks";
 
 const HealthCheck: React.FC = () => {
   const { health, loading, error, checkHealth } = useHealthCheck();
@@ -10,12 +10,12 @@ const HealthCheck: React.FC = () => {
   }, [checkHealth]);
 
   const getStatusColor = (status?: string) => {
-    if (!status) return '#ef4444'; // red
-    return status.toLowerCase() === 'ok' ? '#22c55e' : '#ef4444'; // green or red
+    if (!status) return "#ef4444"; // red
+    return status.toLowerCase() === "ok" ? "#22c55e" : "#ef4444"; // green or red
   };
 
   const formatDateTime = (dateString?: string) => {
-    if (!dateString) return 'N/A';
+    if (!dateString) return "N/A";
     try {
       return new Date(dateString).toLocaleString();
     } catch {
@@ -27,12 +27,12 @@ const HealthCheck: React.FC = () => {
     <div className="health-check">
       <div className="health-header">
         <h2>🏥 Backend Health Check</h2>
-        <button 
-          onClick={checkHealth} 
+        <button
+          onClick={checkHealth}
           disabled={loading}
           className="refresh-button"
         >
-          {loading ? '🔄' : '🔄'} {loading ? 'Checking...' : 'Refresh'}
+          {loading ? "🔄" : "🔄"} {loading ? "Checking..." : "Refresh"}
         </button>
       </div>
 
@@ -56,8 +56,8 @@ const HealthCheck: React.FC = () => {
 
         {health && !loading && (
           <div className="health-status success">
-            <div 
-              className="status-indicator" 
+            <div
+              className="status-indicator"
               style={{ backgroundColor: getStatusColor(health.status) }}
             ></div>
             <div className="health-details">
@@ -73,11 +73,14 @@ const HealthCheck: React.FC = () => {
       </div>
 
       <div className="health-info">
-        <p>💡 This component tests the connection to the backend API by calling the health endpoint.</p>
+        <p>
+          💡 This component tests the connection to the backend API by calling
+          the health endpoint.
+        </p>
         <p>🔍 Check the browser console for detailed API logs.</p>
       </div>
     </div>
   );
 };
 
-export default HealthCheck;
+export { HealthCheck };

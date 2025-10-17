@@ -1,1 +1,2 @@
-export { default as HealthPage } from "./HealthPage";
+export * from "./HealthPage";
+export * from "./NameValidationPage";
