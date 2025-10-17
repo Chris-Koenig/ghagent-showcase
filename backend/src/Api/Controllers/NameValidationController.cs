@@ -8,7 +8,7 @@ namespace Api.Controllers;
 [Route("api/[controller]")]
 public sealed class NameValidationController : ControllerBase
 {
-    private static readonly Regex NameValidationRegex = new("^[a-zA-Z\\s]+$", RegexOptions.Compiled);
+    private static readonly Regex NameValidationRegex = new("^[\\p{L}\\s]+$", RegexOptions.Compiled);
 
     [HttpPost("validate")]
     public ActionResult<NameValidationResultDto> ValidateName([FromBody] NameValidationDto request)
