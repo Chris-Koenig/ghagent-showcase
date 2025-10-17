@@ -1,12 +1,15 @@
 # Generate arc42 Architecture Documentation
 
-Create a comprehensive arc42 architecture documentation for the ghagent-showcase solution. Each section should be in a separate markdown file within a `documentation` folder.
+Create a comprehensive arc42 architecture documentation for the 
+ghagent-showcase solution. Each section should be in a separate markdown file 
+within a `documentation` folder.
 
 ## Pre-Documentation Requirements
 
 1. **Check Existing Documentation First:**
    - **ALWAYS** examine the `documentation/` folder before starting
-   - **DO NOT** recreate or overwrite existing documentation files unless explicitly requested
+   - **DO NOT** recreate or overwrite existing documentation files unless 
+     explicitly requested
    - **ONLY** create missing sections or update outdated content when necessary
    - If documentation already exists, analyze what's missing or needs updates
    - Preserve existing content and build upon it rather than replacing it
@@ -22,7 +25,7 @@ Create a comprehensive arc42 architecture documentation for the ghagent-showcase
 
 1. **Create documentation folder structure (only if missing):**
 
-   ```
+   ```text
    documentation/
    ├── README.md (Table of contents and overview)
    ├── 01-introduction-and-goals.md
@@ -117,7 +120,9 @@ Generate **ONLY** the missing or outdated files with:
 - Professional technical writing style
 - Compliance with the provided coding guidelines
 
-Each file should be complete and standalone while maintaining coherence across the entire documentation set. All diagrams must be created using Mermaid syntax only.
+Each file should be complete and standalone while maintaining coherence across 
+the entire documentation set. All diagrams must be created using Mermaid 
+syntax only.
 
 ## Example Mermaid Usage
 
@@ -136,4 +141,5 @@ graph TB
 
 Ensure all architectural visualizations follow this Mermaid-only approach.
 
-**Remember: Check first, preserve existing content, create only what's missing or explicitly needs updating.**
+**Remember: Check first, preserve existing content, create only what's missing 
+or explicitly needs updating.**

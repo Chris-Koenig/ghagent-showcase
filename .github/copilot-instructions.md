@@ -2,15 +2,23 @@
 
 ## Purpose / Context
 
-This instruction defines best practices for developing full-stack applications using .NET Core for the backend API and React for the frontend. The focus is on maintaining clean architecture principles, ensuring security, and following established patterns for scalable, maintainable applications.
+This instruction defines best practices for developing full-stack applications 
+using .NET Core for the backend API and React for the frontend. The focus is 
+on maintaining clean architecture principles, ensuring security, and following 
+established patterns for scalable, maintainable applications.
 
 ## Solution Description
 
-This is a showcase application demonstrating a full-stack solution with a .NET Core backend and a React frontend. The backend provides RESTful APIs for managing user data, while the frontend offers a user interface for interacting with these APIs. The application emphasizes best practices in code organization, security, and maintainability.
+This is a showcase application demonstrating a full-stack solution with a 
+.NET Core backend and a React frontend. The backend provides RESTful APIs for 
+managing user data, while the frontend offers a user interface for interacting 
+with these APIs. The application emphasizes best practices in code 
+organization, security, and maintainability.
 
 ## Branch Policy
 
-Always creat branches from `main` and name them `feature/your-feature-name` or `bugfix/your-bugfix-name`. Do not commit directly to the `main` branch.
+Always create branches from `main` and name them `feature/your-feature-name` or 
+`bugfix/your-bugfix-name`. Do not commit directly to the `main` branch.
 
 ## Best Practices
 
@@ -23,16 +31,23 @@ NEVER recreate existing code.
 
 ### Architecture & Design Principles
 
-- **Single Responsibility Principle (SRP)**: Each class, method, and component should have one reason to change
-- **DRY (Don't Repeat Yourself)**: Extract common functionality into reusable components, services, and utilities
-- **Separation of Concerns**: Clearly separate business logic, data access, and presentation layers
-- **Dependency Injection**: Use .NET Core's built-in DI container for loose coupling
-- **Clean Architecture**: Organize code in layers (Domain, Application, Infrastructure, Presentation)
+- **Single Responsibility Principle (SRP)**: Each class, method, and component 
+  should have one reason to change
+- **DRY (Don't Repeat Yourself)**: Extract common functionality into reusable 
+  components, services, and utilities
+- **Separation of Concerns**: Clearly separate business logic, data access, 
+  and presentation layers
+- **Dependency Injection**: Use .NET Core's built-in DI container for loose 
+  coupling
+- **Clean Architecture**: Organize code in layers (Domain, Application, 
+  Infrastructure, Presentation)
 
 ### .NET Core Backend
 
-- **API Structure**: Use Controllers only for HTTP concerns; delegate business logic to Services
-- **DTOs**: Always use Data Transfer Objects for API input/output; never expose domain entities directly
+- **API Structure**: Use Controllers only for HTTP concerns; delegate business 
+  logic to Services
+- **DTOs**: Always use Data Transfer Objects for API input/output; never 
+  expose domain entities directly
 - **Validation**: Implement input validation using FluentValidation or Data Annotations
 - **Error Handling**: Use global exception middleware for consistent error responses
 - **Logging**: Implement structured logging with Serilog or built-in ILogger
@@ -43,7 +58,8 @@ NEVER recreate existing code.
 
 ### React Frontend
 
-- **Component Structure**: Use functional components with hooks; keep components small and focused
+- **Component Structure**: Use functional components with hooks; keep 
+  components small and focused
 - **State Management**: Use React Context for global state, useState/useReducer for local state
 - **Custom Hooks**: Extract reusable logic into custom hooks
 - **Error Boundaries**: Implement error boundaries for graceful error handling
