@@ -46,6 +46,23 @@ const Users: React.FC = () => {
     }
   };
 
+  const handleUpdateUser = async (userDto: CreateUserDto) => {
+    if (!selectedUser) return;
+    
+    try {
+      setError(null);
+      const updatedUser = await userService.updateUser(selectedUser.id, userDto);
+      setUsers(users.map((u) => (u.id === updatedUser.id ? updatedUser : u)));
+      setSelectedUser(null);
+    } catch (err) {
+      if (err instanceof ApiError) {
+        setError(`Failed to update user: ${err.message}`);
+      } else {
+        setError('An unexpected error occurred');
+      }
+    }
+  };
+
   const handleDeleteUser = async (id: number) => {
     if (!window.confirm('Are you sure you want to delete this user?')) {
       return;
@@ -90,7 +107,7 @@ const Users: React.FC = () => {
           <h2>{selectedUser ? 'Edit User' : 'Create New User'}</h2>
           <UserForm
             user={selectedUser || undefined}
-            onSubmit={handleCreateUser}
+            onSubmit={selectedUser ? handleUpdateUser : handleCreateUser}
             onCancel={selectedUser ? () => setSelectedUser(null) : undefined}
           />
         </section>
