@@ -23,7 +23,6 @@ public sealed class ServerInfoControllerTests
         var controller = new ServerInfoController();
 
         var result = controller.GetServerIp();
-        var okResult = result.Result as OkObjectResult;
         var serverIpDto = result.Value;
 
         Assert.NotNull(serverIpDto);
