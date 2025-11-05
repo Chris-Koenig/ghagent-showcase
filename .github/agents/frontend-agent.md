@@ -1,5 +1,5 @@
 ---
-name: project frontend developer
+name: frontend dev
 description: this agent acts as your senior developer in react.
 ---
 
