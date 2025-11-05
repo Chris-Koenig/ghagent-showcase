@@ -1,6 +1,10 @@
 /**
- * Sanitize user input to prevent XSS attacks
- * This is a basic implementation - in production, consider using DOMPurify
+ * Basic text escaping for display purposes
+ * NOTE: This is a minimal implementation. React's JSX already provides XSS protection
+ * by escaping content by default. For cases where you need to render HTML content,
+ * use a proper sanitization library like DOMPurify in production.
+ * 
+ * This function is provided as a utility but may not be necessary for most React use cases.
  */
 export function sanitizeInput(input: string): string {
   const element = document.createElement('div');

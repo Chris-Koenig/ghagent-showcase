@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { User, CreateUserDto } from '../types/user';
+import type { User, CreateUserDto, UpdateUserDto } from '../types/user';
 import { userService, ApiError } from '../services/api';
 import UserList from '../components/UserList';
 import UserForm from '../components/UserForm';
@@ -46,7 +46,7 @@ const Users: React.FC = () => {
     }
   };
 
-  const handleUpdateUser = async (userDto: CreateUserDto) => {
+  const handleUpdateUser = async (userDto: UpdateUserDto) => {
     if (!selectedUser) return;
     
     try {
