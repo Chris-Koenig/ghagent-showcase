@@ -1,6 +1,6 @@
 ---
 name: api developer
-description:
+description: implements backend code
 ---
 
 # My Agent
